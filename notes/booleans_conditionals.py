@@ -1,6 +1,6 @@
 """
 Kaggle Python Course - Days 4 & 5: Booleans & Conditionals
-Notatki: Julia Nowak | Data: 21-06-2025 & 22-06-2025
+Notatki: Julia Nowak | Data: 21-06-2025 & 25-06-2025
 """
 
 # =============================================================================
