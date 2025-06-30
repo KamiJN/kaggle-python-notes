@@ -57,3 +57,18 @@ print(bool(0)) # output: False
 print(bool("xyz")) # output: True 
 print(bool("")) # output: False
 # Ogólnie rzecz biorąc, puste ciągi znaków, listy, itd. są traktowane jako fałsz, a reszta jako prawda.
+
+# =============================================================================
+# 5. Funkcja sprawdzająca przygotowanie na opady deszczu.
+# =============================================================================
+def prepared_for_weather(have_umbrella, rain_level, have_hood, is_workday):
+    #return have_umbrella or rain_level < 5 and have_hood or not rain_level > 0 and is_workday # output: False (przy poniższym założeniu)
+    return have_umbrella or rain_level < 5 and have_hood or not (rain_level > 0 and is_workday)
+
+have_umbrella = False
+rain_level = 5
+have_hood = False
+is_workday = False
+
+actual = prepared_for_weather(have_umbrella, rain_level, have_hood, is_workday)
+print(actual) # output: True
