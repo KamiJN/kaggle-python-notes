@@ -96,3 +96,9 @@ def exactly_one_sauce(ketchup, mustard, onion):
     (You may be familiar with this operation under the name "exclusive or")
     """
     return (ketchup or mustard) and not (ketchup and mustard) # / return (ketchup and not mustard) or (mustard and not ketchup)
+
+def exactly_one_topping(ketchup, mustard, onion):
+    """Return whether the customer wants exactly one of the three available toppings
+    on their hot dog.
+    """
+    return (int(ketchup + mustard + onion) == 1) # / return (int(ketchup) + int(mustard) + int(onion)) == 1
