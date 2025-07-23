@@ -1,6 +1,6 @@
 """
 Kaggle Python Course - Days 8 & 9: Loops and List Comprehensions
-Notatki: Julia Nowak | Data: 14-07-2025 & 15-07-2025
+Notatki: Julia Nowak | Data: 14-07-2025 & 24-07-2025
 """
 
 # =============================================================================
@@ -90,3 +90,27 @@ def count_negatives(nums):
 '''
 def count_negatives(nums):
     return len([num for num in nums if num < 0])
+
+# =============================================================================
+# 3. Zadania - rozwiązania
+# ============================================================================= 
+# 1)
+def has_lucky_number(nums):
+    """Return whether the given list of numbers is lucky. A lucky list contains
+    at least one number divisible by 7.
+    """
+    for num in nums:
+        if num % 7 == 0:
+            return True
+    return False
+# def has_lucky_number(nums):
+#    return any([num % 7 == 0 for num in nums])
+help(any)
+'''
+any(iterable, /)
+    Return True if bool(x) is True for any x in the iterable.
+
+    If the iterable is empty, return False.
+'''
+
+# 2)
